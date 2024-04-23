@@ -1,5 +1,7 @@
 <div class="side-bar-head">
-  <div class="account">Tom</div>
+  <div class="account">
+    <%= link_to current_user.name, edit_user_path(current_user) %>
+  </div>
   <div class="new">チャットを作成する</div>
 </div>
 <div class="chanel">
